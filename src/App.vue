@@ -5,7 +5,7 @@
     </div>
     <div class="wrapper__main">
       <div class="o-pageContainer">
-        
+        -->Content goes here...
       </div>
     </div>
   </div>
@@ -25,10 +25,7 @@ export default {
 <style lang="scss">
   @import "./assets/style/global.scss";
   .o-fullContainer{
-    //TODO: remove background color and 100vh
     width: 100%;
-    height: 100vh;
-    // background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -36,8 +33,17 @@ export default {
   }
 
   .wrapper__main{
-    width: 100%;
     background-color: var(--clr-secondary);
+    color: var(--clr-base-light);
+    width: 100%;
+    height: var(--main-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fs-xxl);
+    font-weight: bold;
+    // padding-top: var(--space-xxxl);
+    // padding-bottom: var(--space-xxxl);
   }
 
   .o-pageContainer{
