@@ -21,7 +21,8 @@ export default {
 <style>
     .o-header{
         background-color: white;
-        width: 100%;
+        width: var(--width-xl);
+        margin: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
