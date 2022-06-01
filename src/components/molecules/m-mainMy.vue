@@ -6,12 +6,17 @@
 
 <script>
 export default {
-    name: "main",
+    name: "mainCs"
 }
 </script>
 
-<style lang "scss">
+<style lang = "scss" scoped>
     .container{
         width: var(--width-xl);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        font-size: var(--fs-xxl) ;
     }
 </style>

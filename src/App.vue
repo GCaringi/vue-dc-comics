@@ -10,7 +10,7 @@
 
 <script>
 import headerCs from './components/organism/o-header.vue';
-import mainCs from './components/molecules/m-main.vue'
+import mainCs from './components/molecules/m-mainMy.vue'
 
 export default {
   name: 'App',
