@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class = "o-header">
       <logo/>
       <nav-bar/>
   </header>
@@ -19,10 +19,11 @@ export default {
 </script>
 
 <style>
-    header{
+    .o-header{
+        background-color: white;
         width: 100%;
         display: flex;
         justify-content: space-between;
-        align-content: center;
+        align-items: center;
     }
 </style>

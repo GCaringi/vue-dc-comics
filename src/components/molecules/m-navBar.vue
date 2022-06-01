@@ -1,9 +1,12 @@
 <template>
   <ul class = "m-navbar">
-      <li> <listItem/> </li>
-      <li> <listItem/> </li>
-      <li> <listItem/> </li>
-      <li> <listItem/> </li>
+    <listItem/>
+    <listItem/>
+    <listItem/>
+    <listItem/>
+    <listItem/>
+    <listItem/>
+    <listItem/>
   </ul>
 </template>
 
@@ -19,6 +22,11 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang = "scss" scoped>
+    .m-navbar{
+        position: relative;
+        display: flex;
+        column-gap: var(--space-xl);
+        padding: var(--space-sm);
+    }
 </style>

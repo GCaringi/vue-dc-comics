@@ -1,5 +1,5 @@
 <template>
-  <img src="../../assets/img/dc-logo.png" alt="Logo">
+  <img class = "a-logo" src="../../assets/img/dc-logo.png" alt="Logo">
 </template>
 
 <script>
@@ -9,7 +9,7 @@ export default {
 </script>
 
 <style lang = "scss" scoped>
-    p{
-        color: red;
+    .a-logo{
+        padding: var(--space-sm);
     }
 </style>
