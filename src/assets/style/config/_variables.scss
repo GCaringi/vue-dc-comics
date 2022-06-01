@@ -3,7 +3,9 @@
 --------------*/
 
 :root{
-    //  Colors 
+    /*--------------
+        COLORS   
+    ---------------*/  
     --clr-base-light: #ffffff;
     --clr-base-dark: #000000;
     --clr-primary: #0282F9;
@@ -11,5 +13,40 @@
     --clr-tertiary: #303030;
     --clr-socialLinks: #797979;
 
+    /*---------------
+          LAYOUT
+    ----------------*/    
+    /*    Containers    */
+    --width-xxs: 15rem;
+    --width-xs: 20rem;
+    --width-sm: 30rem;
+    --width-md: 45rem;
+    --width-lg: 60rem;
+    --width-xl: 75rem;
+    --width-xxl: 90rem;
+
+    /*    Layout element size    */
+
+   
+    /*---------------
+          SPACING
+    ----------------*/
+    --space-unit: .0625rem;
+
+    --space-xxxs: .125rem;
+    --space-xxs: .25rem;
+    --space-xs: .3125rem;
+    --space-sm: .5rem;
+    --space-md: .625rem;
+    --space-lg: .75rem;
+    --space-xl: 1rem;
+    --space-xxl: 1.25rem;
+    --space-xxxl: 1.5rem;
     
+    --space-largest: 2rem;
+
+    /*------------------
+          FONT SIZE
+    -------------------*/
+
 }
