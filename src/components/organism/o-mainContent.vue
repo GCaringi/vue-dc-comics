@@ -1,5 +1,5 @@
 <template>
-    <main class = "container">
+    <main class = "o-main">
       -->Content goes here...
     </main>
 </template>
@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style lang = "scss" scoped>
-    .container{
+    .o-main{
         width: var(--width-xl);
         height: 100%;
         display: flex;

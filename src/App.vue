@@ -1,22 +1,22 @@
 <template>
   <div id="app">
-    <headerCs/>
+    <headerBar/>
     <div class="wrapper__main">
-      <mainCs/>
+      <mainContent/>
     </div>
   </div>
 
 </template>
 
 <script>
-import headerCs from './components/organism/o-header.vue';
-import mainCs from './components/molecules/m-mainMy.vue'
+import headerBar from './components/organism/o-header.vue';
+import mainContent from './components/organism/o-mainContent.vue'
 
 export default {
   name: 'App',
   components: {
-    headerCs,
-    mainCs,
+    headerBar,
+    mainContent,
   }
 }
 </script>

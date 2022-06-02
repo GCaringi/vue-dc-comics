@@ -10,7 +10,7 @@ import logo from '../atoms/a-logo.vue'
 import navBar from '../molecules/m-navBar.vue'
 
 export default {
-    name: "HeadBar",
+    name: "headerBar",
     components: { 
         logo,
         navBar,
