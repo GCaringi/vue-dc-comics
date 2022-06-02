@@ -1,13 +1,14 @@
 <template>
+<nav>
   <ul class = "m-navbar">
-    <listItem/>
-    <listItem/>
-    <listItem/>
-    <listItem/>
-    <listItem/>
-    <listItem/>
-    <listItem/>
+    <list-item
+      v-for= "(link,index) in links" 
+      :key = "index" 
+      :info = "link.text"
+      :isActive = "link.active"
+    />
   </ul>
+</nav>
 </template>
 
 <script>
@@ -18,6 +19,53 @@ export default {
     name: "navBar",
     components: {
         listItem,
+    },
+    data() {
+        return {
+            links : [
+                {
+                    text: "characters",
+                    active: false,
+                },
+                {
+                    text: "comics",
+                    active: false,
+                },
+                {
+                    text: "movies",
+                    active: false,
+                },
+                {
+                    text: "tv",
+                    active: false,
+                },
+                {
+                    text: "games",
+                    active: false,
+                },
+                {
+                    text: "collectibles",
+                    active: true,
+                },
+                {
+                    text: "video",
+                    active: false,
+                },
+                {
+                    text: "fans",
+                    active: false,
+                },
+                {
+                    text: "news",
+                    active: false,
+                },
+                {
+                    text: "shop",
+                    active: false,
+                },
+            ]
+
+        }
     }
 }
 </script>

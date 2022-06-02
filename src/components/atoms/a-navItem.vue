@@ -1,19 +1,20 @@
 <template>
-    <li class = "a-navItem">
-        <a class = "active" href="#">Prova</a>
+    <li class = "a-navItem" :class = "{'active' : isActive}">
+        <a href="#">{{info}}</a>
     </li>
 </template>
 
 <script>
 export default {
-    name: "listItem"
+    name: "listItem",
+    props: ["info", "isActive"]
 }
 </script>
 
 <style lang = "scss" scoped>
     .a-navItem{
-        position: relative;
         list-style: none;
+        position: relative;
     }
         a{
             color: inherit;
@@ -23,13 +24,17 @@ export default {
             font-weight: var(--fw-lg);
             cursor: pointer;
         }
-    a:hover::after{
-        content: "";
+    .a-navItem.active{
+        color: var(--clr-primary);
+    }
+    
+    .active::after{
         position: absolute;
-        background-color: var(--clr-primary) ;
+        content: "";
         width: 100%;
-        height: 5px;
-        top: calc(var(--header-height) / 2 - 12px);
+        height: var(--active-element-height);
+        background-color: var(--clr-primary) ;
+        top: calc(var(--header-height) / 2 - var(--space-lg) );
         left: 0px;
     }
 </style>
