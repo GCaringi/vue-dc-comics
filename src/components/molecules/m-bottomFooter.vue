@@ -2,6 +2,7 @@
     <div class="m-bottomFooter">
         <div class="container">
             <sign-btn/>
+            <social-links/>
         </div>
     </div>
 </template>
@@ -9,11 +10,13 @@
 <script>
 
 import signBtn from '../atoms/a-buttons.vue'
+import socialLinks from './m-socialLinks.vue'
 
 export default {
     name: "bottomFooter",
     components: {
         signBtn,
+        socialLinks,
     }
 }
 </script>

@@ -14,7 +14,7 @@ export default {
 
     .a-btn_cs{
         background-color: transparent;
-        border: var(--space-unit) solid var(--clr-primary);
+        border: var(--space-xxxs) solid var(--clr-primary);
         padding: var(--space-xl) var(--space-xxl);
         color: var(--clr-base-light);
         font-size: var(--fs-lg);
