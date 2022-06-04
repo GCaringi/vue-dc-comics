@@ -1,7 +1,7 @@
 <template>
   <div class="m-middleFooter">
       <div class="container">
-          <div 
+          <div class = "lists" 
             v-for =  "(list, index) in lists"
             :key = "index"
             >
@@ -85,14 +85,23 @@ export default {
 <style lang = "scss" scoped>
     .m-middleFooter{
         background-image: url("@/assets/img/footer-bg.jpg");
+        padding-top: var(--space-largest);
+        height: 450px;
     }
 
     .container{
-        margin: auto;
         width: var(--width-xl);
-        height: 100%;
+        height: 450px;
+        margin: auto;
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        
     }
+
+    .lists{
+        padding: var(--space-xxl);
+    }
+
 </style>

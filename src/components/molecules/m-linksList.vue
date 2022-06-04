@@ -20,6 +20,19 @@ export default {
 }
 </script>
 
-<style>
+<style lang = "scss" scoped>
+    ul{
+        margin: 0px;
+        list-style: none;
+    }   
+        a{
+            font-size: var(--fs-lg) ;
+            text-decoration: none;
+            color: var(--clr-socialLinks);
+            opacity: 0.7;
+        &:hover{
+            opacity: 1;
+        }
+    }
 
 </style>
