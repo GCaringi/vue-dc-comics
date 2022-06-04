@@ -1,13 +1,23 @@
 <template>
   <div class = "a-icons">
-      <img src="../../assets/img/buy-comics-digital-comics.png" alt="">
-      <h5>Digital comics</h5>
+      <!-- TODO: Insert image dinamically -->
+      <img src="" alt = "test">
+      <h5>{{text}}</h5>
   </div>
 </template>
 
 <script>
 export default {
     name: "FooterIcons",
+    props: {
+      srcs: {
+        type: String,
+        required: true,
+      },
+      text: {
+        type: String,
+      }
+    }
 }
 </script>
 
@@ -17,6 +27,13 @@ export default {
       align-items: center;
     }
         img{
-          width: 40%;
+          width: 50px;
+          height: 70px;
+        }
+        h5{
+          color: var(--clr-base-light);
+          padding-left: var(--space-sm);
+          text-transform: uppercase;
+          font-size: var(--fs-md);
         }
 </style>

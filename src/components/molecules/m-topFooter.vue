@@ -1,11 +1,12 @@
 <template>
   <div class="m-topFooter">
       <div class="container">
-        <iconsTop/>
-        <iconsTop/>
-        <iconsTop/>
-        <iconsTop/>
-        <iconsTop/>
+        <iconsTop
+        v-for = "(element,index) in categories" 
+        :key = "index"
+        :srcs = "element.img"
+        :text = "element.text"
+        />
       </div>
   </div>
 </template>
@@ -18,6 +19,32 @@ export default {
     name: "topFooter",
     components: {
         iconsTop,
+    },
+    data(){
+        return {
+            categories: [
+                {
+                    img: "buy-comics-digital-comics.png",
+                    text: "digital comics"
+                },
+                {
+                    img: "buy-comics-merchandise.png",
+                    text: "dc merchandise"
+                },
+                {
+                    img: "buy-comics-subscriptions",
+                    text: "subscription"
+                },
+                {
+                    img: "buy-comics-shop-locator.png",
+                    text: "comic shop locator"
+                },
+                {
+                    img: "buy-dc-power-visa.svg",
+                    text: "dc power visa"
+                },
+            ]
+        }
     }
 }
 </script>
