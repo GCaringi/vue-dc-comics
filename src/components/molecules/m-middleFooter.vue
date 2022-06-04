@@ -86,12 +86,13 @@ export default {
     .m-middleFooter{
         background-image: url("@/assets/img/footer-bg.jpg");
         padding-top: var(--space-largest);
-        height: 450px;
+        padding-bottom: var(--space-largest);
+        height: var(--middleFooter-height);
     }
 
     .container{
         width: var(--width-xl);
-        height: 450px;
+        height: inherit;
         margin: auto;
         display: flex;
         flex-direction: column;

@@ -30,6 +30,7 @@ export default {
             text-decoration: none;
             color: var(--clr-socialLinks);
             opacity: 0.7;
+            cursor: pointer;
         &:hover{
             opacity: 1;
         }
