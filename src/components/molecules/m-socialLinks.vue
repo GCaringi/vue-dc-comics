@@ -2,21 +2,12 @@
   <div class="m-socialLinks">
         <h5>Follow Us</h5>
         <ul>
-            <li>
+            <li
+            v-for = "(icons, index) in socialIcons"
+            :key = "index"
+            >
                 <a href="#">
-                    <img src="../../assets/img/footer-facebook.png" alt="">
-                </a>
-                <a href="#">
-                    <img src="../../assets/img/footer-twitter.png" alt="">
-                </a>
-                <a href="#">
-                    <img src="../../assets/img/footer-youtube.png" alt="">
-                </a>
-                <a href="#">
-                    <img src="../../assets/img/footer-pinterest.png" alt="">
-                </a>
-                <a href="#">
-                    <img src="../../assets/img/footer-periscope.png" alt="">
+                    <img :src='require(`../../assets/img/${icons}`)' alt="prova">
                 </a>
             </li>
         </ul>
@@ -25,7 +16,18 @@
 
 <script>
 export default {
-
+    name: "socialLinks",
+    data(){
+        return {
+            socialIcons: [
+                "footer-facebook.png",
+                "footer-twitter.png",
+                "footer-youtube.png",
+                "footer-pinterest.png",
+                "footer-periscope.png",
+            ]
+        }
+    },
 }
 </script>
 
@@ -43,8 +45,7 @@ export default {
     }
     ul{
         list-style: none;
-    }
-    a{
-        padding-right: var(--space-md);
+        display: flex;
+        column-gap: var(--space-md);
     }
 </style>

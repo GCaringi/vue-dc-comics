@@ -5,7 +5,12 @@
 <script>
 export default {
     name: "listTitle",
-    props: ["head"]
+    props: {
+        head: {
+            type:String,
+            required: true
+        }
+    }
 }
 </script>
 

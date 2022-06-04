@@ -15,7 +15,9 @@
 export default {
     name: "linksList",
     props: {
-        "obj" : Object,
+        obj: {
+            type: Object,
+        }
     }
 }
 </script>

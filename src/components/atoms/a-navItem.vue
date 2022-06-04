@@ -7,7 +7,15 @@
 <script>
 export default {
     name: "listItem",
-    props: ["info", "isActive"]
+    props: {
+        info: {
+            type: String,
+            required: true,
+        },
+        isActive:{
+            type: Boolean,
+        }
+    }
 }
 </script>
 

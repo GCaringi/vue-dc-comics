@@ -32,7 +32,7 @@ export default {
                     text: "dc merchandise"
                 },
                 {
-                    img: "buy-comics-subscriptions",
+                    img: "buy-comics-subscriptions.png",
                     text: "subscription"
                 },
                 {
