@@ -1,23 +1,21 @@
 <template>
-    <div>
-        <listTitle/>
-        <ul>
-            <li>
-                
-            </li>
-        </ul>
-    </div>
+    <ul>
+        <li 
+        v-for = "(element, index) in obj.links" 
+        :key = "index"
+        >
+            <a href="#">{{element}}</a>            
+        </li>
+    </ul>
 </template>
 
 <script>
-import { component } from 'vue/types/umd'
 
-import listTitle from '../atoms/a-listTitle.vue'
 
 export default {
     name: "linksList",
-    components: {
-        listTitle,
+    props: {
+        "obj" : Object,
     }
 }
 </script>

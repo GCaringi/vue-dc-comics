@@ -1,17 +1,32 @@
 <template>
   <div class="m-middleFooter">
       <div class="container">
-
+          <div 
+            v-for =  "(list, index) in lists"
+            :key = "index"
+            >
+            <listTitle
+                :head = "list.title"
+            /> 
+            <linksList
+                :obj = "list" 
+            />
+          </div>
       </div>
   </div>
 </template>
 
 <script>
 
-
+import listTitle from '../atoms/a-listTitle.vue'
+import linksList from '../molecules/m-linksList.vue'
 
 export default {
     name: "middleFooter",
+    components: {
+        listTitle,
+        linksList,
+    },
     data(){
         return{
             lists: [
