@@ -12,6 +12,7 @@
                 :obj = "list" 
             />
           </div>
+          <img class = "a-logo-bg" src="../../assets/img/dc-logo-bg.png" alt="">
       </div>
   </div>
 </template>
@@ -88,6 +89,7 @@ export default {
         padding-top: var(--space-largest);
         padding-bottom: var(--space-largest);
         height: var(--middleFooter-height);
+        overflow: hidden;
     }
 
     .container{
@@ -98,11 +100,17 @@ export default {
         flex-direction: column;
         flex-wrap: wrap;
         align-content: flex-start;
-        
+        position: relative;
     }
 
     .lists{
-        padding: var(--space-xxl);
+        padding: var(--space-xxl) var(--space-xxl) var(--space-xxl) 0px;
+    }
+
+    .a-logo-bg{
+        position: absolute;
+        top: -30%;
+        right: 0px;
     }
 
 </style>
