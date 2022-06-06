@@ -86,6 +86,7 @@ export default {
 <style lang = "scss" scoped>
     .m-middleFooter{
         background-image: url("@/assets/img/footer-bg.jpg");
+        background-size: cover;
         padding-top: var(--space-largest);
         padding-bottom: var(--space-largest);
         height: var(--middleFooter-height);

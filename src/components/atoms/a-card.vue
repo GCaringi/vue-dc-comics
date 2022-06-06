@@ -20,14 +20,16 @@ export default {
 }
 </script>
 
-<style lang = "scss" scoped >
+<style lang = "scss" scoped>
   .a-card{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: calc((100% / 6) - 10px);
     padding: var(--space-lg) 0px;
+    cursor: pointer;
     img{
+      width: 100%;
       padding-bottom: var(--space-lg);
     }
   }
