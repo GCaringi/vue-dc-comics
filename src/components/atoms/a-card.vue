@@ -1,6 +1,7 @@
 <template>
   <div class="a-card">
     <img :src = imgUrl alt="">
+    {{imgName}}
   </div>
 </template>
 
@@ -10,6 +11,10 @@ export default {
     props: {
       imgUrl: {
         type: String,
+        required: true,
+      },
+      imgName: {
+        type: String,
       }
     }
 }
@@ -18,7 +23,12 @@ export default {
 <style lang = "scss" scoped >
   .a-card{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: calc((100% / 6) - 10px);
+    padding: var(--space-lg) 0px;
+    img{
+      padding-bottom: var(--space-lg);
+    }
   }
 </style>
