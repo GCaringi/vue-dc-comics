@@ -1,9 +1,7 @@
 <template>
   <div id="app">
     <headerBar/>
-    <div class="wrapper__main">
-      <mainContent/>
-    </div>
+    <mainContent/>
     <footerBar/>
   </div>
 
@@ -26,9 +24,5 @@ export default {
 
 <style lang="scss">
   @import "./assets/style/global.scss";
-  .wrapper__main{
-    background-color: var(--clr-secondary);
-    color: var(--clr-base-light);
-    height: var(--main-height);
-  }
+  
 </style>

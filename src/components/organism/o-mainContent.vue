@@ -1,22 +1,19 @@
 <template>
-    <main class = "o-main">
-      -->Content goes here...
-    </main>
+    <jumbo/>
 </template>
 
 <script>
+
+import jumbo from '../molecules/m-jumbotron.vue'
+
 export default {
-    name: "mainCs"
+    name: "mainCs",
+    components: {
+        jumbo,
+    }
 }
 </script>
 
 <style lang = "scss" scoped>
-    .o-main{
-        width: var(--width-xl);
-        height: 100%;
-        display: flex;
-        align-items: center;
-        margin: auto;
-        font-size: var(--fs-xxl) ;
-    }
+
 </style>
