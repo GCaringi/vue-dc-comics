@@ -19,5 +19,6 @@ export default {
         color: var(--clr-base-light);
         font-size: var(--fs-lg);
         font-weight: var(--fw-xl);
+        cursor: pointer;
     }
 </style>

@@ -7,7 +7,7 @@
             :key = "index"
             >
                 <a href="#">
-                    <img :src='require(`../../assets/img/${icons}`)' alt="prova">
+                    <img :src='require(`@/assets/img/${icons}`)' alt="prova">
                 </a>
             </li>
         </ul>
