@@ -94,7 +94,7 @@ export default {
     }
 
     .container{
-        width: var(--width-xl);
+        max-width: var(--width-xl);
         height: inherit;
         margin: auto;
         display: flex;

@@ -21,7 +21,7 @@ export default {
 <style>
     .o-header{
         background-color: white;
-        width: var(--width-xl);
+        max-width: var(--width-xl);
         margin: auto;
         display: flex;
         justify-content: space-between;

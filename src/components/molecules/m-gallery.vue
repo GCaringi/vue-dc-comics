@@ -53,7 +53,7 @@ export default {
   }
 
   .container{
-    width: var(--width-xl);
+    max-width: var(--width-xl);
     margin: auto;
     position: relative;
   }

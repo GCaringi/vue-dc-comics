@@ -29,9 +29,7 @@ export default {
     }
 
     .container{
-        width: var(--width-xl);
-        /* padding-top: var(--space-xl);
-        padding-bottom: var(--space-xl); */
+        max-width: var(--width-xl);
         margin: auto;
         display: flex;
         justify-content: space-between;

@@ -1,6 +1,5 @@
 <template>
   <div class="m-jumbo">
-      ci
   </div>
 </template>
 
@@ -15,5 +14,7 @@ export default {
         width: 100%;
         height: var(--jumbo-height);
         background-image: url("../../assets/img/jumbotron.jpg");
+        background-size: cover;
+        background-position: top center;
     }
 </style>

@@ -58,7 +58,7 @@ export default {
 
     .container{
         margin: auto;
-        width: var(--width-xl);
+        max-width: var(--width-xl);
         height: 100%;
         display: flex;
         justify-content: space-around;
